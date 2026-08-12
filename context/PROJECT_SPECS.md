@@ -18,7 +18,7 @@ To keep the network secure against automated scanners and bots, only two specifi
 ### Router Rules
 | External Port | Protocol | Internal IP | Internal Port | Destination | Purpose |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `[Random High Port]` | TCP | `192.168.1.X` (ESP) | `80` | ESP Microcontroller | Triggering the WoL API |
+| `38429` | TCP | `192.168.1.X` (ESP) | `38429` | ESP Microcontroller | HTTPS WoL API (TLS) |
 | `51820` | UDP | `192.168.1.Y` (Server)| `51820` | Ubuntu Server | WireGuard VPN Tunnel |
 
 > **Security Note:** The Home Server has **no open TCP ports**. It is completely invisible to standard web scanners. WireGuard operates on UDP and silently drops unauthenticated packets, meaning port `51820` will appear "closed" to attackers.
@@ -30,9 +30,9 @@ To keep the network secure against automated scanners and bots, only two specifi
 The connection process is completely programmatic and requires zero human intervention once initiated by the frontend.
 
 ### Step 1: The Wake Request (Frontend -> ESP)
-When the client needs data, the frontend sends an HTTP `POST` request to the router's public IP on the designated high port. The router forwards this to the ESP's `/api/wol` endpoint.
-*   The request **must** include an authentication header (e.g., `Authorization: Bearer <Secret_API_Key>`) to prevent unauthorized wakeups.
-*   The ESP validates the header. If invalid, it silently closes the connection (drops the request).
+When the client needs data, the frontend sends an HTTPS `POST` request to the router's public IP on port `38429`. The router forwards this to the ESP's `/api/wol` endpoint.
+*   The request **must** include an authentication header (e.g., `X-API-Key: <Secret_API_Key>`) to prevent unauthorized wakeups.
+*   The ESP validates the header using constant-time comparison. If invalid, it returns `401 Unauthorized`.
 
 ### Step 2: Wake-on-LAN Execution
 Upon successful validation, the ESP broadcasts a Magic Packet (WoL) across the local network targeting the Home Server's MAC address. 
@@ -57,9 +57,9 @@ sequenceDiagram
     participant E as ESP (Local Web Server)
     participant S as Home Server (Ubuntu)
 
-    C->>R: POST [Public_IP]:[Port]/api/wol
-    Note over C,R: Header: Authorization: Bearer <Key>
-    R->>E: Forward HTTP to ESP (Port 80)
+    C->>R: POST [Public_IP]:38429/api/wol
+    Note over C,R: Header: X-API-Key: <Key>
+    R->>E: Forward HTTPS to ESP (Port 38429)
     E->>E: Validate API Key
     E->>S: Send WoL Magic Packet
     E-->>C: 200 OK (Trigger Confirmed)
@@ -80,6 +80,9 @@ sequenceDiagram
 
 ## 5. Security Summary
 
-1. **Zero Trust for the Server:** The server itself is never exposed to raw HTTP traffic.
-2. **API Key Protection:** The ESP requires strict header validation. Bots scanning random open ports with generic GET/POST requests will be ignored.
-3. **Silent VPN:** WireGuard does not respond to unauthenticated scans. The home network remains invisible to unauthorized users.
+1. **TLS Encryption:** All traffic encrypted in transit via HTTPS with self-signed certificate.
+2. **Zero Trust for the Server:** The server itself is never exposed to raw HTTP traffic.
+3. **API Key Protection:** The ESP requires strict header validation with constant-time comparison (`mbedtls_ct_memcmp`). Unauthorized requests receive `401`.
+4. **Resource Caps:** Socket limits, LRU purge, and timeouts prevent exhaustion attacks.
+5. **Heap Guard:** Requests rejected with `503` when free heap drops below 30 KB.
+6. **Silent VPN:** WireGuard does not respond to unauthenticated scans. The home network remains invisible to unauthorized users.

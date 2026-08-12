@@ -20,6 +20,7 @@ idf_component_register(
                "utils/web_API.c"
     INCLUDE_DIRS "."
                  "utils"
+    EMBED_TXTFILES "server.crt" "server.key"
     EMBED_FILES "web/index.html"
                 "web/css/layout.css"
                 "web/css/components.css"
@@ -34,7 +35,7 @@ idf_component_register(
               esp_wifi
               esp_netif
               esp_event
-              esp_http_server
+              esp_https_server
               spi_flash
               esp_timer
               esp_app_format

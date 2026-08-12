@@ -1,15 +1,15 @@
 /**
  * @file    app.c
- * @brief   Firmware entry point — bootstraps dotenv, Wi-Fi, and HTTP server.
+ * @brief   Firmware entry point — bootstraps dotenv, Wi-Fi, and HTTPS server.
  *
  * Flow:
  *   1. Parse embedded .env.
  *   2. Init Wi-Fi station and connect.
  *   3. Wait up to 15 s for a DHCP lease.
- *   4. Start the HTTP server.
+ *   4. Start the HTTPS server.
  *   5. Enter a health-monitoring loop (every 5 s).
  *
- * The health loop retries Wi-Fi on disconnect and restarts the HTTP server if
+ * The health loop retries Wi-Fi on disconnect and restarts the HTTPS server if
  * it stops. Warning logs are emitted once per transition into the unhealthy
  * state to avoid console spam during extended outages.
  */
@@ -32,6 +32,11 @@ extern void test_web_API_anchor(void);
 #endif
 
 static const char *TAG = "APP";
+
+extern const uint8_t server_crt_start[] asm("_binary_server_crt_start");
+extern const uint8_t server_crt_end[]   asm("_binary_server_crt_end");
+extern const uint8_t server_key_start[] asm("_binary_server_key_start");
+extern const uint8_t server_key_end[]   asm("_binary_server_key_end");
 
 /* ── Health-loop constants ────────────────────────────────────── */
 
@@ -99,11 +104,14 @@ void app_main(void)
         lan_ip = "0.0.0.0";
     }
 
-    /* ── HTTP server ─────────────────────────────────────────── */
+    /* ── HTTPS server ─────────────────────────────────────────── */
     ESP_ERROR_CHECK(web_init(web_port));
-    ESP_ERROR_CHECK(web_start());
+    ESP_ERROR_CHECK(web_start(
+        server_crt_start, server_crt_end - server_crt_start,
+        server_key_start, server_key_end - server_key_start
+    ));
 
-    ESP_LOGI(TAG, "Web server: http://%s:%u", lan_ip, web_port);
+    ESP_LOGI(TAG, "HTTPS server: https://%s:%u", lan_ip, web_port);
 
     /* ── Health loop ─────────────────────────────────────────── */
     bool was_wifi_unhealthy   = false; /**< Edge-detection for Wi-Fi warn  */
@@ -122,10 +130,13 @@ void app_main(void)
 
         if (!web_health()) {
             if (!was_server_unhealthy) {
-                ESP_LOGW(TAG, "Web server not healthy — restarting");
+                ESP_LOGW(TAG, "HTTPS server not healthy — restarting");
                 was_server_unhealthy = true;
             }
-            web_start();
+            web_start(
+                server_crt_start, server_crt_end - server_crt_start,
+                server_key_start, server_key_end - server_key_start
+            );
         } else {
             was_server_unhealthy = false;
         }

@@ -9,6 +9,7 @@ sdkconfig.old
 **/.env
 *.pem
 *.key
+*.crt
 
 # IDE / editor
 .vscode/
