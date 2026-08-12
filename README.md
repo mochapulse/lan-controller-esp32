@@ -85,7 +85,7 @@ an embedded `.env` file — no recompile needed for Wi-Fi or port changes.
 
 ## Quick start
 
-### Configure
+### 1. Configure
 
 ```bash
 cp main/.env.example main/.env
@@ -98,16 +98,33 @@ Edit `main/.env`:
 | `SSID_WIFI` | yes | — | Wi-Fi SSID |
 | `PASSWD_WIFI` | yes | — | Wi-Fi password |
 | `APP_NAME` | no | `ESP32_WoL` | Logged at boot |
-| `WEB_PORT` | no | `80` | HTTP port |
+| `WEB_PORT` | no | `38429` | HTTPS port |
 | `WEB_API_TOKEN` | yes | — | API key required on all `/api/*` routes (`X-API-Key`) |
 
-### Build & flash
+### 2. Generate SSL Certificate (one-time)
+
+The HTTPS server requires a self-signed certificate:
+
+```bash
+openssl req -x509 -newkey rsa:2048 -nodes \
+  -keyout main/server.key \
+  -out main/server.crt \
+  -days 3650 \
+  -subj "/CN=nexus-coffee.duckdns.org"
+```
+
+Replace `nexus-coffee.duckdns.org` with your domain or IP. Certificates are gitignored.
+
+### 3. Build & flash
 
 ```bash
 idf.py set-target esp32
+idf.py fullclean  # Required after adding certificates
 idf.py build
 idf.py -p /dev/ttyUSB0 flash monitor
 ```
+
+> **Note:** Browsers will show a certificate warning (`NET::ERR_CERT_AUTHORITY_INVALID`) because the certificate is self-signed. Accept it to proceed.
 
 ## Web interface
 
@@ -136,6 +153,8 @@ All inputs are currently disabled — backend not implemented.
 
 ## API Endpoints
 
+All endpoints are served over **HTTPS** (TLS with self-signed certificate).
+
 | Method | URI | Response |
 |--------|-----|----------|
 | `GET` | `/` | Dashboard HTML |
@@ -163,6 +182,71 @@ X-API-Key: <WEB_API_TOKEN>
 
 Missing/invalid key returns `401 Unauthorized`. If free heap is below the
 safety threshold, API routes return `503 Service Unavailable`.
+
+### Testing with curl
+
+```bash
+# Get device status
+curl -k -s -H "X-API-Key: <TOKEN>" https://<ESP_IP>:<PORT>/api/status
+
+# Trigger Wake-on-LAN
+curl -k -X POST -H "X-API-Key: <TOKEN>" https://<ESP_IP>:<PORT>/api/wol
+```
+
+The `-k` flag skips certificate verification (self-signed cert).
+
+## Remote Access (Port Forwarding)
+
+To access the ESP32 dashboard and API from outside your local network, configure port forwarding on your router.
+
+### Router Configuration
+
+1. Log in to your router's admin panel (typically `192.168.1.1` or `192.168.0.1`)
+2. Navigate to **Port Forwarding** / **NAT** / **Virtual Server** section
+3. Add a new rule:
+
+| Setting | Value |
+|---------|-------|
+| **Service Name** | `WakeOnLine_HTTPS` |
+| **External Port** | `38429` (or any high port you prefer) |
+| **Internal IP** | `<ESP32_STATIC_IP>` (from `.env` `ESP_IP` or DHCP) |
+| **Internal Port** | `38429` (must match `WEB_PORT` in `.env`) |
+| **Protocol** | TCP |
+
+4. Save and apply the configuration
+
+### Dynamic DNS (Recommended)
+
+If your ISP assigns a dynamic public IP, use a DDNS service like DuckDNS:
+
+1. Create an account at [duckdns.org](https://www.duckdns.org)
+2. Register a subdomain (e.g., `nexus-coffee.duckdns.org`)
+3. Install the DuckDNS updater on a device in your network (or configure it on your router if supported)
+4. Use your domain when generating the SSL certificate:
+
+```bash
+openssl req -x509 -newkey rsa:2048 -nodes \
+  -keyout main/server.key \
+  -out main/server.crt \
+  -days 3650 \
+  -subj "/CN=nexus-coffee.duckdns.org"
+```
+
+### Testing Remote Access
+
+From any external network:
+
+```bash
+# Via IP
+curl -k -H "X-API-Key: <TOKEN>" https://<YOUR_PUBLIC_IP>:38429/api/status
+
+# Via DDNS domain
+curl -k -H "X-API-Key: <TOKEN>" https://nexus-coffee.duckdns.org:38429/api/status
+```
+
+Or open in a browser: `https://nexus-coffee.duckdns.org:38429/`
+
+> **Security Note:** The self-signed certificate will trigger browser warnings. For production use, consider Let's Encrypt certificates (requires more complex setup) or certificate pinning in your client application.
 
 ### `/api/status` response
 

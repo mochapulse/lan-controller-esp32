@@ -4,11 +4,11 @@ This document describes the endpoints implemented in the current codebase (`main
 
 ## Base URL
 
-- Server starts on `WEB_PORT` from `.env` (default: `80`, HTTPS: `38429`).
+- Server starts on `WEB_PORT` from `.env` (default: `38429`).
 - Access from your LAN using:
 
 ```text
-https://<ESP32_LAN_IP>:<WEB_PORT>
+https://192.168.1.19:38429
 ```
 
 > **Note:** When using a self-signed certificate, browsers will show a security warning. Accept it or configure client-side certificate pinning.
