@@ -60,6 +60,42 @@ function showError(show) {
   if (el) el.className = show ? "error-banner" : "error-banner hidden";
 }
 
+/* ── Nexus server health (direct browser fetch, no firmware proxy) ─ */
+
+var NEXUS_HEALTH_URL  = "http://nexus-lan.local:47102/api/v1/health";
+var NEXUS_TIMEOUT_MS  = 5000;
+var nexusController   = null;
+
+function setNexusStatus(state) {
+  var el = document.getElementById("nexus-status");
+  if (!el) return;
+  if (state === "ok") {
+    el.textContent = "OK!";
+    el.className = "value connected";
+  } else if (state === "checking") {
+    el.textContent = "checking…";
+    el.className = "value";
+  } else {
+    el.textContent = "unreachable";
+    el.className = "value disconnected";
+  }
+}
+
+async function checkNexusHealth() {
+  if (nexusController) nexusController.abort();
+  var controller = new AbortController();
+  nexusController = controller;
+  var timer = setTimeout(function() { controller.abort(); }, NEXUS_TIMEOUT_MS);
+  try {
+    var res = await fetch(NEXUS_HEALTH_URL, { signal: controller.signal });
+    setNexusStatus("ok");
+  } catch (e) {
+    setNexusStatus("unreachable");
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 async function refreshStatus() {
   try {
     var res = await fetch("/api/status", { headers: authHeaders() });
@@ -175,5 +211,7 @@ document.addEventListener("DOMContentLoaded", function() {
   initCharts();
   refreshStatus();
   setInterval(refreshStatus, 5000);
+  checkNexusHealth();
+  setInterval(checkNexusHealth, 5000);
   window.addEventListener("beforeunload", saveHistory);
 });

@@ -66,6 +66,17 @@
         </div>
 
         <div class="card">
+          <h3>Nexus Server</h3>
+          <div class="status-grid">
+            <div class="status-item">
+              <span class="label">Health</span>
+              <span id="nexus-status" class="value">checking…</span>
+            </div>
+          </div>
+          <p class="hint">GET http://nexus-lan.local:47102/api/v1/health</p>
+        </div>
+
+        <div class="card">
           <h3>Memory</h3>
           <div class="status-grid">
             <div class="status-item">
@@ -168,65 +179,6 @@
 
       <section id="tab-wol" class="tab">
         <h2>Wake-on-LAN Configuration</h2>
-
-        <div class="card">
-          <h3>Target Devices</h3>
-          <div id="device-list" class="placeholder-list">
-            <div class="placeholder-row">
-              <span class="placeholder-icon">&#9675;</span>
-              <div class="placeholder-text">
-                <div class="placeholder-line w-60"></div>
-                <div class="placeholder-line w-40"></div>
-              </div>
-            </div>
-            <div class="placeholder-row">
-              <span class="placeholder-icon">&#9675;</span>
-              <div class="placeholder-text">
-                <div class="placeholder-line w-50"></div>
-                <div class="placeholder-line w-30"></div>
-              </div>
-            </div>
-            <div class="placeholder-row">
-              <span class="placeholder-icon">&#9675;</span>
-              <div class="placeholder-text">
-                <div class="placeholder-line w-55"></div>
-                <div class="placeholder-line w-35"></div>
-              </div>
-            </div>
-          </div>
-          <button class="btn-secondary" disabled>+ Add Device</button>
-        </div>
-
-        <div class="card">
-          <h3>IP Forwarding Rules</h3>
-          <div id="rule-list" class="placeholder-list">
-            <div class="placeholder-row">
-              <span class="placeholder-icon">&#8596;</span>
-              <div class="placeholder-text">
-                <div class="placeholder-line w-70"></div>
-                <div class="placeholder-line w-35"></div>
-              </div>
-            </div>
-          </div>
-          <button class="btn-secondary" disabled>+ Add Rule</button>
-        </div>
-
-        <div class="card">
-          <h3>Broadcast Settings</h3>
-          <div class="form-group">
-            <label>UDP Port</label>
-            <input type="number" value="9" disabled>
-          </div>
-          <div class="form-group">
-            <label>Broadcast IP</label>
-            <input type="text" value="255.255.255.255" disabled>
-          </div>
-          <div class="form-group">
-            <label>Interface</label>
-            <input type="text" value="WLAN" disabled>
-          </div>
-          <p class="hint">Configuration coming soon.</p>
-        </div>
       </section>
     </main>
   </div>
