@@ -19,6 +19,15 @@ When an ESP32 is made accessible via port forwarding:
 * **Requirement:** Never deploy unencrypted HTTP (`esp_httpd`) on public interfaces.
 * **Implementation:** Always use `esp_https_server.h` with `httpd_ssl_start()`.
 * **Certificates:** Provision valid TLS certificates or self-signed certs paired with client-side hash pinning.
+* **Certificate Generation:**
+  ```bash
+  openssl req -x509 -newkey rsa:2048 -nodes \
+    -keyout server.key \
+    -out server.crt \
+    -days 3650 \
+    -subj "/CN=<your-domain>.duckdns.org"
+  ```
+* **Embedding:** Use `EMBED_TXT` in CMakeLists.txt to embed `server.crt` and `server.key` into flash.
 
 ### Rule 2: Enforce Strict HTTP Server Resource Caps
 Prevent socket exhaustion and memory starvation attacks by applying the following limits to `httpd_ssl_config_t`:

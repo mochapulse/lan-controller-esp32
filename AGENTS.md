@@ -117,6 +117,39 @@ doxygen Doxyfile
 - Configure `WEB_API_TOKEN` in `main/.env` (see `main/.env.example`).
 - API routes can return `503 Service Unavailable` with body
   `Low memory threshold reached` when free heap is below the safety guard.
+- All endpoints are served over **HTTPS** (TLS with self-signed certificate).
+
+### Testing HTTPS endpoints
+
+```bash
+# Status endpoint
+curl -k -s -H "X-API-Key: <TOKEN>" https://<ESP_IP>:<PORT>/api/status
+
+# Trigger WoL
+curl -k -X POST -H "X-API-Key: <TOKEN>" https://<ESP_IP>:<PORT>/api/wol
+
+# Dashboard (HTML)
+curl -k -s https://<ESP_IP>:<PORT>/
+```
+
+The `-k` flag skips certificate verification (self-signed cert).
+
+## SSL Certificate Generation
+
+The HTTPS server requires a self-signed certificate. Generate once and embed:
+
+```bash
+openssl req -x509 -newkey rsa:2048 -nodes \
+  -keyout main/server.key \
+  -out main/server.crt \
+  -days 3650 \
+  -subj "/CN=<your-domain>.duckdns.org"
+```
+
+- `server.crt` and `server.key` are gitignored (secrets).
+- Embedded via `EMBED_TXTFILES` in `main/CMakeLists.txt`.
+- Run `idf.py fullclean` after adding certificates to regenerate build artifacts.
+- Browsers will show a certificate warning (`NET::ERR_CERT_AUTHORITY_INVALID`) — accept it to proceed.
 
 ## Web frontend
 

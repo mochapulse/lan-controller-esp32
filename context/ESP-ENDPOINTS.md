@@ -4,14 +4,16 @@ This document describes the endpoints implemented in the current codebase (`main
 
 ## Base URL
 
-- Server starts on `WEB_PORT` from `.env` (default: `80`).
+- Server starts on `WEB_PORT` from `.env` (default: `38429`).
 - Access from your LAN using:
 
 ```text
-http://<ESP32_LAN_IP>:<WEB_PORT>
+https://192.168.1.19:38429
 ```
 
-You can see the current LAN IP in serial logs (`Web server: http://...`) or by opening `/api/status`.
+> **Note:** When using a self-signed certificate, browsers will show a security warning. Accept it or configure client-side certificate pinning.
+
+You can see the current LAN IP in serial logs (`HTTPS server: https://...`) or by opening `/api/status`.
 
 ---
 
@@ -41,9 +43,9 @@ Returns device/network/runtime info as JSON.
 ### Example
 
 ```bash
-curl -s \
+curl -k -s \
   -H "X-API-Key: <WEB_API_TOKEN>" \
-  http://<ESP32_LAN_IP>:<WEB_PORT>/api/status
+  https://<ESP32_LAN_IP>:<WEB_PORT>/api/status
 ```
 
 ### Response (shape)
@@ -89,13 +91,13 @@ Both methods trigger the same Wake-on-LAN send operation.
 ### Examples
 
 ```bash
-curl -X POST \
+curl -k -X POST \
   -H "X-API-Key: <WEB_API_TOKEN>" \
-  http://<ESP32_LAN_IP>:<WEB_PORT>/api/wol
+  https://<ESP32_LAN_IP>:<WEB_PORT>/api/wol
 
-curl \
+curl -k \
   -H "X-API-Key: <WEB_API_TOKEN>" \
-  http://<ESP32_LAN_IP>:<WEB_PORT>/api/wol
+  https://<ESP32_LAN_IP>:<WEB_PORT>/api/wol
 ```
 
 ### Success response
