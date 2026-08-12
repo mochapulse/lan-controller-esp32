@@ -1,0 +1,5 @@
+<map id="wifi_retry" name="wifi_retry">
+<area shape="rect" id="Node000001" title="Attempt to reconnect if currently disconnected." alt="" coords="5,5,88,31"/>
+<area shape="rect" id="Node000002" href="$wifi__connect_8c.html#aa04cb005500914912c8d6644e53cd9a8" title="Check whether the station is connected and has an IP." alt="" coords="136,5,229,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,15,122,15,122,21,88,21"/>
+</map>

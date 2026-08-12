@@ -1,0 +1,5 @@
+<map id="is_valid_mac_format" name="is_valid_mac_format">
+<area shape="rect" id="Node000001" title="Validate MAC address string format (XX:XX:XX:XX:XX:XX)." alt="" coords="5,5,164,31"/>
+<area shape="rect" id="Node000002" href="$wol_8c.html#a76515ebe8cb345475df5ce39c3e75a0f" title="Check whether a character is a valid hex digit (0&#45;9, a&#45;f, A&#45;F)." alt="" coords="212,5,311,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,15,198,15,198,21,164,21"/>
+</map>

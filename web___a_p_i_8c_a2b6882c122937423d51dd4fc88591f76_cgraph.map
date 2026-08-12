@@ -1,0 +1,5 @@
+<map id="api_auth_or_reject" name="api_auth_or_reject">
+<area shape="rect" id="Node000001" title="Validate X&#45;API&#45;Key via constant&#45;time compare and reject on failure." alt="" coords="5,5,148,31"/>
+<area shape="rect" id="Node000002" href="$dotenv_8c.html#ae2c9e61eb3a2787ac6ebec1c9041986a" title="Retrieve a string value by key." alt="" coords="196,5,291,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,15,182,15,182,21,148,21"/>
+</map>

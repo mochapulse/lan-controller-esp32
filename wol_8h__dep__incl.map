@@ -1,0 +1,11 @@
+<map id="wol.h" name="wol.h">
+<area shape="rect" id="Node000001" title="Wake&#45;on&#45;LAN utility — configuration and magic packet sender." alt="" coords="159,5,216,31"/>
+<area shape="rect" id="Node000002" href="$app_8c.html" title="Firmware entry point — bootstraps dotenv, Wi&#45;Fi, and HTTPS server." alt="" coords="5,79,63,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,39,60,81,58,76,149,34"/>
+<area shape="rect" id="Node000003" href="$test__wol_8c.html" title="Unit tests for the Wake&#45;on&#45;LAN module." alt="" coords="87,79,175,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,43,142,80,138,77,167,40"/>
+<area shape="rect" id="Node000004" href="$web___a_p_i_8c.html" title="HTTP endpoint handlers — implementation." alt="" coords="199,79,287,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="207,40,236,77,232,80,203,43"/>
+<area shape="rect" id="Node000005" href="$wol_8c.html" title=" " alt="" coords="311,79,367,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="225,34,316,76,313,81,223,39"/>
+</map>

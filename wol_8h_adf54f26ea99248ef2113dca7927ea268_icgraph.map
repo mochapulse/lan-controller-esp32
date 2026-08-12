@@ -1,0 +1,15 @@
+<map id="wol_reset" name="wol_reset">
+<area shape="rect" id="Node000001" title="Reset WoL module state (for test isolation)." alt="" coords="148,129,233,155"/>
+<area shape="rect" id="Node000002" href="$test__wol_8c.html#a613e55fcf1610394506a3086b9face16" title=" " alt="" coords="5,5,100,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,120,138,82,98,44,81,33,84,28,102,40,142,78,174,116"/>
+<area shape="rect" id="Node000003" href="$test__wol_8c.html#acbc0ac1c5212a582dd17b6d2571353fb" title=" " alt="" coords="5,55,100,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,125,99,94,78,82,80,78,101,89,157,120"/>
+<area shape="rect" id="Node000004" href="$test__wol_8c.html#a7e5b0ac829393ee98499e90a2645ad94" title=" " alt="" coords="5,104,100,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,134,100,128,101,123,135,129"/>
+<area shape="rect" id="Node000005" href="$test__wol_8c.html#a5e41a22a2a693db29a62e806e982d8c0" title=" " alt="" coords="5,153,100,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="135,154,101,160,100,155,134,149"/>
+<area shape="rect" id="Node000006" href="$test__wol_8c.html#a6c6a1406e071b61a11f74604dfcfd20c" title=" " alt="" coords="5,203,100,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="155,164,79,205,76,200,153,159"/>
+<area shape="rect" id="Node000007" href="$test__wol_8c.html#afafd00e7efcc93a010662454f5f3c5bd" title=" " alt="" coords="5,252,100,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="173,168,142,204,102,241,82,254,79,250,98,237,138,200,169,164"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="wol_send" name="wol_send">
+<area shape="rect" id="Node000001" title="Send a Wake&#45;on&#45;LAN magic packet over UDP broadcast." alt="" coords="577,31,660,56"/>
+<area shape="rect" id="Node000002" href="$test__wol_8c.html#afafd00e7efcc93a010662454f5f3c5bd" title=" " alt="" coords="431,5,526,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="564,36,526,29,527,24,565,31"/>
+<area shape="rect" id="Node000003" href="$web___a_p_i_8c.html#a10bce792fd3c3117bc79da4a54e28370" title="Trigger a WoL send and return JSON status." alt="" coords="428,55,529,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="564,55,530,61,529,56,563,50"/>
+<area shape="rect" id="Node000004" href="$web___a_p_i_8c.html#a96795f15e1c7bfe5b1eac458acb683d3" title="Register all URI handlers." alt="" coords="275,55,380,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="414,70,380,70,380,65,414,65"/>
+<area shape="rect" id="Node000005" href="$web__util_8c.html#a197dc25d543cc5cba8d05cbfb9934167" title="Start the HTTPS server and register all URI handlers." alt="" coords="140,55,227,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="261,70,227,70,227,65,261,65"/>
+<area shape="rect" id="Node000006" href="$app_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title="Firmware entry point — bootstraps dotenv, Wi&#45;Fi, and HTTP server." alt="" coords="5,55,92,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="126,70,92,70,92,65,126,65"/>
+</map>

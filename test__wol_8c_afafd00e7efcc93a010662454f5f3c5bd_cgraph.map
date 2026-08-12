@@ -1,0 +1,7 @@
+<map id="TEST_CASE" name="TEST_CASE">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,100,56"/>
+<area shape="rect" id="Node000002" href="$wol_8c.html#adf54f26ea99248ef2113dca7927ea268" title="Reset WoL module state (for test isolation)." alt="" coords="148,5,233,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,32,134,26,135,31,101,37"/>
+<area shape="rect" id="Node000003" href="$wol_8c.html#a2d0697ed6102c1b1482f3696551d797c" title="Send a Wake&#45;on&#45;LAN magic packet over UDP broadcast." alt="" coords="149,55,232,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,49,136,55,135,60,100,54"/>
+</map>

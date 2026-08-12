@@ -1,0 +1,14 @@
+<map id="heap_is_safe_or_reject" name="heap_is_safe_or_reject">
+<area shape="rect" id="Node000001" title="Enforce low&#45;memory request rejection to protect heap stability." alt="" coords="595,31,765,56"/>
+<area shape="rect" id="Node000002" href="$web___a_p_i_8c.html#adc7b4f6e2978a7866fa572b720f94d61" title="Build and send a /api/status JSON response." alt="" coords="428,5,547,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="581,33,546,28,547,23,581,28"/>
+<area shape="rect" id="Node000006" href="$web___a_p_i_8c.html#a10bce792fd3c3117bc79da4a54e28370" title="Trigger a WoL send and return JSON status." alt="" coords="437,55,538,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="581,58,539,64,538,58,580,53"/>
+<area shape="rect" id="Node000003" href="$web___a_p_i_8c.html#a96795f15e1c7bfe5b1eac458acb683d3" title="Register all URI handlers." alt="" coords="275,31,380,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="415,32,381,38,380,32,414,27"/>
+<area shape="rect" id="Node000004" href="$web__util_8c.html#a197dc25d543cc5cba8d05cbfb9934167" title="Start the HTTPS server and register all URI handlers." alt="" coords="140,31,227,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="261,46,227,46,227,41,261,41"/>
+<area shape="rect" id="Node000005" href="$app_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title="Firmware entry point — bootstraps dotenv, Wi&#45;Fi, and HTTP server." alt="" coords="5,31,92,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="126,46,92,46,92,41,126,41"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="423,60,380,54,380,49,424,55"/>
+</map>

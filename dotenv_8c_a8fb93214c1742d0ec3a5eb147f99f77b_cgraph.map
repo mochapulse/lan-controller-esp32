@@ -1,0 +1,5 @@
+<map id="dotenv_init" name="dotenv_init">
+<area shape="rect" id="Node000001" title="Load and parse the embedded .env file." alt="" coords="5,5,100,31"/>
+<area shape="rect" id="Node000002" href="$dotenv_8c.html#ad2b5b7df9efbd9c0c986df28e7e66e89" title="Parse a single &quot;KEY=VALUE&quot; line into the static table." alt="" coords="148,5,289,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,15,134,15,134,21,100,21"/>
+</map>

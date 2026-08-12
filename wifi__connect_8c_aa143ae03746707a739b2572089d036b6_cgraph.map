@@ -1,0 +1,7 @@
+<map id="wifi_init" name="wifi_init">
+<area shape="rect" id="Node000001" title="Initialise NVS, netif, event loop, and Wi&#45;Fi station." alt="" coords="5,31,79,56"/>
+<area shape="rect" id="Node000002" href="$wifi__connect_8c.html#aa4d4f01b4271619dfa58a8ac9d73e951" title="Stop DHCP on the STA netif and apply static_ip." alt="" coords="127,5,247,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,34,113,28,114,34,79,40"/>
+<area shape="rect" id="Node000003" href="$wifi__connect_8c.html#ab89f8a7d7357e4fb0e466836024c7f9c" title="System event callback registered for WIFI_EVENT and IP_EVENT." alt="" coords="129,55,244,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="79,47,116,53,115,58,78,52"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="TEST_CASE" name="TEST_CASE">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,100,56"/>
+<area shape="rect" id="Node000002" href="$dotenv_8c.html#ae2c9e61eb3a2787ac6ebec1c9041986a" title="Retrieve a string value by key." alt="" coords="154,5,249,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,33,140,26,141,31,101,38"/>
+<area shape="rect" id="Node000003" href="$dotenv_8c.html#aed36f9b2b470183b7a7acb7f6eeb42cd" title="Reset the internal entry table (for test isolation)." alt="" coords="148,55,255,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,48,135,54,134,59,100,54"/>
+</map>

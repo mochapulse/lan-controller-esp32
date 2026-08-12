@@ -1,0 +1,7 @@
+<map id="wol_init" name="wol_init">
+<area shape="rect" id="Node000001" title="Initialise WoL destination from string parameters." alt="" coords="5,5,79,31"/>
+<area shape="rect" id="Node000002" href="$wol_8c.html#abe112e25a5327683b56c8c89646c7353" title="Validate MAC address string format (XX:XX:XX:XX:XX:XX)." alt="" coords="127,5,285,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,15,113,15,113,21,79,21"/>
+<area shape="rect" id="Node000003" href="$wol_8c.html#a76515ebe8cb345475df5ce39c3e75a0f" title="Check whether a character is a valid hex digit (0&#45;9, a&#45;f, A&#45;F)." alt="" coords="333,5,432,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="286,15,320,15,320,21,286,21"/>
+</map>

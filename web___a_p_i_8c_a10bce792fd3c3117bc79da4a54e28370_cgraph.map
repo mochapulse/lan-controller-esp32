@@ -1,0 +1,11 @@
+<map id="wol_handler" name="wol_handler">
+<area shape="rect" id="Node000001" title="Trigger a WoL send and return JSON status." alt="" coords="5,55,107,80"/>
+<area shape="rect" id="Node000002" href="$web___a_p_i_8c.html#a2b6882c122937423d51dd4fc88591f76" title="Validate X&#45;API&#45;Key via constant&#45;time compare and reject on failure." alt="" coords="169,5,311,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,52,178,32,179,37,105,57"/>
+<area shape="rect" id="Node000004" href="$web___a_p_i_8c.html#a564c55211d6c33d4e62a94589eca34bf" title="Enforce low&#45;memory request rejection to protect heap stability." alt="" coords="155,55,325,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="107,65,141,65,141,70,107,70"/>
+<area shape="rect" id="Node000005" href="$wol_8c.html#a2d0697ed6102c1b1482f3696551d797c" title="Send a Wake&#45;on&#45;LAN magic packet over UDP broadcast." alt="" coords="199,104,281,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="105,77,186,100,185,105,103,83"/>
+<area shape="rect" id="Node000003" href="$dotenv_8c.html#ae2c9e61eb3a2787ac6ebec1c9041986a" title="Retrieve a string value by key." alt="" coords="373,5,468,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="312,15,359,15,359,21,312,21"/>
+</map>

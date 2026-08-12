@@ -1,0 +1,12 @@
+<map id="test_web_API.c" name="test_web_API.c">
+<area shape="rect" id="Node000001" title="Unit tests for the web API utility functions." alt="" coords="89,5,209,31"/>
+<area shape="rect" id="Node000002" href="$web___a_p_i_8h.html" title="HTTP endpoint registration — static files, /api/status, /api/wol." alt="" coords="105,79,194,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,31,152,65,147,65,147,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,128,177"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="136,33,115,54,94,80,81,110,74,139,68,137,76,108,90,77,111,50,133,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="218,79,283,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="167,28,224,68,221,73,164,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,106,92,145,89,141,134,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="153,152,290,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="163,102,202,140,198,144,159,106"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="wol_init" name="wol_init">
+<area shape="rect" id="Node000001" title="Initialise WoL destination from string parameters." alt="" coords="148,129,221,155"/>
+<area shape="rect" id="Node000002" href="$app_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title="Firmware entry point — bootstraps dotenv, Wi&#45;Fi, and HTTP server." alt="" coords="9,5,96,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,119,136,81,98,44,81,33,84,29,102,40,140,78,169,116"/>
+<area shape="rect" id="Node000003" href="$test__wol_8c.html#a613e55fcf1610394506a3086b9face16" title=" " alt="" coords="5,55,100,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,124,99,94,78,83,81,78,101,89,153,120"/>
+<area shape="rect" id="Node000004" href="$test__wol_8c.html#acbc0ac1c5212a582dd17b6d2571353fb" title=" " alt="" coords="5,104,100,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,135,100,128,101,123,135,130"/>
+<area shape="rect" id="Node000005" href="$test__wol_8c.html#a7e5b0ac829393ee98499e90a2645ad94" title=" " alt="" coords="5,153,100,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="135,154,101,160,100,155,134,148"/>
+<area shape="rect" id="Node000006" href="$test__wol_8c.html#a5e41a22a2a693db29a62e806e982d8c0" title=" " alt="" coords="5,203,100,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="151,164,101,192,79,205,76,200,99,188,148,159"/>
+<area shape="rect" id="Node000007" href="$test__wol_8c.html#a6c6a1406e071b61a11f74604dfcfd20c" title=" " alt="" coords="5,252,100,277"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="169,168,139,204,102,241,83,254,80,250,98,237,135,201,164,165"/>
+</map>

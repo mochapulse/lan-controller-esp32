@@ -1,0 +1,5 @@
+<map id="wifi_connect.h" name="wifi_connect.h">
+<area shape="rect" id="Node000001" title="Wi&#45;Fi station lifecycle: init, connect, disconnect, health check, retry, and IP retrieval." alt="" coords="5,5,120,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="22,79,103,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,31,65,65,60,65,60,31"/>
+</map>

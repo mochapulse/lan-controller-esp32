@@ -1,0 +1,9 @@
+<map id="status_handler" name="status_handler">
+<area shape="rect" id="Node000001" title="Build and send a /api/status JSON response." alt="" coords="428,5,547,31"/>
+<area shape="rect" id="Node000002" href="$web___a_p_i_8c.html#a96795f15e1c7bfe5b1eac458acb683d3" title="Register all URI handlers." alt="" coords="275,5,380,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="415,21,380,21,380,15,415,15"/>
+<area shape="rect" id="Node000003" href="$web__util_8c.html#a197dc25d543cc5cba8d05cbfb9934167" title="Start the HTTPS server and register all URI handlers." alt="" coords="140,5,227,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="261,21,227,21,227,15,261,15"/>
+<area shape="rect" id="Node000004" href="$app_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title="Firmware entry point — bootstraps dotenv, Wi&#45;Fi, and HTTP server." alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="126,21,92,21,92,15,126,15"/>
+</map>

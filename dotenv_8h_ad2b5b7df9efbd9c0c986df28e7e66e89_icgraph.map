@@ -1,0 +1,7 @@
+<map id="dotenv_parse_line" name="dotenv_parse_line">
+<area shape="rect" id="Node000001" title="Parse a single &quot;KEY=VALUE&quot; line and store it in the entry table." alt="" coords="283,5,424,31"/>
+<area shape="rect" id="Node000002" href="$dotenv_8c.html#a8fb93214c1742d0ec3a5eb147f99f77b" title="Load and parse the embedded .env file." alt="" coords="140,5,235,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,21,235,21,235,15,269,15"/>
+<area shape="rect" id="Node000003" href="$app_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title="Firmware entry point — bootstraps dotenv, Wi&#45;Fi, and HTTP server." alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,21,92,21,92,15,126,15"/>
+</map>

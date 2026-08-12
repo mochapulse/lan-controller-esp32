@@ -1,0 +1,26 @@
+<map id="web_API_init" name="web_API_init">
+<area shape="rect" id="Node000001" title="Register all URI handlers." alt="" coords="5,68,111,93"/>
+<area shape="rect" id="Node000002" href="$web___a_p_i_8c.html#a265fec6f90a423c909c5b5af196310ca" title="Serve an embedded static file matched by request URI." alt="" coords="161,19,275,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,65,162,46,163,51,101,71"/>
+<area shape="rect" id="Node000003" href="$web___a_p_i_8c.html#adc7b4f6e2978a7866fa572b720f94d61" title="Build and send a /api/status JSON response." alt="" coords="159,129,277,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="93,91,172,122,170,127,91,96"/>
+<area shape="rect" id="Node000010" href="$web___a_p_i_8c.html#a10bce792fd3c3117bc79da4a54e28370" title="Trigger a WoL send and return JSON status." alt="" coords="167,68,269,93"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="111,78,154,78,154,83,111,83"/>
+<area shape="rect" id="Node000004" href="$web___a_p_i_8c.html#a2b6882c122937423d51dd4fc88591f76" title="Validate X&#45;API&#45;Key via constant&#45;time compare and reject on failure." alt="" coords="339,55,482,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="242,127,324,89,346,81,347,87,326,94,244,132"/>
+<area shape="rect" id="Node000006" href="$web___a_p_i_8c.html#ad930ad5328debdce3e3ac83ae3c0dc81" title="Map esp_chip_model_t enum to a human&#45;readable string." alt="" coords="350,153,471,179"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="278,147,337,154,336,159,277,152"/>
+<area shape="rect" id="Node000007" href="$wifi__connect_8c.html#a64941b79700fa76bbb2ae3f6e1cc0421" title="Non&#45;blocking IP getter." alt="" coords="363,255,459,280"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="233,153,273,192,327,233,356,247,353,252,324,238,269,196,229,157"/>
+<area shape="rect" id="Node000008" href="$wifi__connect_8c.html#aa04cb005500914912c8d6644e53cd9a8" title="Check whether the station is connected and has an IP." alt="" coords="545,229,638,255"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="244,152,282,170,326,187,434,215,531,232,530,237,433,220,325,193,280,175,242,157"/>
+<area shape="rect" id="Node000009" href="$web___a_p_i_8c.html#a564c55211d6c33d4e62a94589eca34bf" title="Enforce low&#45;memory request rejection to protect heap stability." alt="" coords="325,104,496,129"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="277,132,311,127,312,132,278,137"/>
+<area shape="rect" id="Node000005" href="$dotenv_8c.html#ae2c9e61eb3a2787ac6ebec1c9041986a" title="Retrieve a string value by key." alt="" coords="544,55,639,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="482,65,530,65,530,70,482,70"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="458,258,530,248,531,253,459,263"/>
+<area shape="poly" id="edge11_Node000010_Node000004" title=" " alt="" coords="269,75,326,71,326,76,269,80"/>
+<area shape="poly" id="edge12_Node000010_Node000009" title=" " alt="" coords="269,87,330,99,329,104,268,93"/>
+<area shape="rect" id="Node000011" href="$wol_8c.html#a2d0697ed6102c1b1482f3696551d797c" title="Send a Wake&#45;on&#45;LAN magic packet over UDP broadcast." alt="" coords="369,5,452,31"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="252,65,324,39,355,30,357,35,326,45,253,70"/>
+</map>

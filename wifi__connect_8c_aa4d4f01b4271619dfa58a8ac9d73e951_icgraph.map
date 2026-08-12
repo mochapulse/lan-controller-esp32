@@ -1,0 +1,7 @@
+<map id="apply_static_ip" name="apply_static_ip">
+<area shape="rect" id="Node000001" title="Stop DHCP on the STA netif and apply static_ip." alt="" coords="261,5,381,31"/>
+<area shape="rect" id="Node000002" href="$wifi__connect_8c.html#aa143ae03746707a739b2572089d036b6" title="Initialise NVS, netif, event loop, and Wi&#45;Fi station." alt="" coords="140,5,213,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,21,213,21,213,15,248,15"/>
+<area shape="rect" id="Node000003" href="$app_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title="Firmware entry point — bootstraps dotenv, Wi&#45;Fi, and HTTP server." alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,21,92,21,92,15,126,15"/>
+</map>

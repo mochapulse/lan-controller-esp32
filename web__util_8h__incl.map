@@ -1,0 +1,5 @@
+<map id="web_util.h" name="web_util.h">
+<area shape="rect" id="Node000001" title="HTTP server lifecycle — init, start, health check, stop." alt="" coords="5,5,95,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="9,79,91,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,31,53,65,47,65,47,31"/>
+</map>

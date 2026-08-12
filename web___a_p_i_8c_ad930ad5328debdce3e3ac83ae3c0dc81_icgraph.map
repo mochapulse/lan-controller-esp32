@@ -1,0 +1,21 @@
+<map id="chip_model_str" name="chip_model_str">
+<area shape="rect" id="Node000001" title="Map esp_chip_model_t enum to a human&#45;readable string." alt="" coords="595,129,716,155"/>
+<area shape="rect" id="Node000002" href="$web___a_p_i_8c.html#adc7b4f6e2978a7866fa572b720f94d61" title="Build and send a /api/status JSON response." alt="" coords="428,5,547,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="631,120,593,82,545,44,524,33,526,28,548,40,597,78,635,116"/>
+<area shape="rect" id="Node000006" href="$test__web___a_p_i_8c.html#a3f986b48f389f1249f02ee9088ea6589" title=" " alt="" coords="440,55,535,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="614,126,546,94,519,82,521,78,548,89,616,121"/>
+<area shape="rect" id="Node000007" href="$test__web___a_p_i_8c.html#a0aab12bb3e8c0c09ab88f0d743bbfbe5" title=" " alt="" coords="440,104,535,129"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="580,133,534,126,535,121,581,128"/>
+<area shape="rect" id="Node000008" href="$test__web___a_p_i_8c.html#a20fca443ee10f797c662676c1cc63f47" title=" " alt="" coords="440,153,535,179"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="581,155,535,162,534,157,580,150"/>
+<area shape="rect" id="Node000009" href="$test__web___a_p_i_8c.html#a1698e472f0aa14b39ef5222a6bf25f84" title=" " alt="" coords="440,203,535,228"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="614,163,548,192,519,205,517,200,546,188,612,158"/>
+<area shape="rect" id="Node000010" href="$test__web___a_p_i_8c.html#a70705941e62eb7e1ae9e560aa5881343" title=" " alt="" coords="440,252,535,277"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="635,167,596,204,548,242,524,254,522,250,545,237,593,200,631,163"/>
+<area shape="rect" id="Node000003" href="$web___a_p_i_8c.html#a96795f15e1c7bfe5b1eac458acb683d3" title="Register all URI handlers." alt="" coords="275,5,380,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="415,21,380,21,380,15,415,15"/>
+<area shape="rect" id="Node000004" href="$web__util_8c.html#a197dc25d543cc5cba8d05cbfb9934167" title="Start the HTTPS server and register all URI handlers." alt="" coords="140,5,227,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="261,21,227,21,227,15,261,15"/>
+<area shape="rect" id="Node000005" href="$app_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title="Firmware entry point — bootstraps dotenv, Wi&#45;Fi, and HTTP server." alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="126,21,92,21,92,15,126,15"/>
+</map>

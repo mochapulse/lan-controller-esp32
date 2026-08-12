@@ -1,0 +1,7 @@
+<map id="event_handler" name="event_handler">
+<area shape="rect" id="Node000001" title="System event callback registered for WIFI_EVENT and IP_EVENT." alt="" coords="261,5,376,31"/>
+<area shape="rect" id="Node000002" href="$wifi__connect_8c.html#aa143ae03746707a739b2572089d036b6" title="Initialise NVS, netif, event loop, and Wi&#45;Fi station." alt="" coords="140,5,213,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,21,214,21,214,15,247,15"/>
+<area shape="rect" id="Node000003" href="$app_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title="Firmware entry point — bootstraps dotenv, Wi&#45;Fi, and HTTP server." alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,21,92,21,92,15,126,15"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="wifi_health" name="wifi_health">
+<area shape="rect" id="Node000001" title="Check whether the station is connected and has an IP." alt="" coords="739,69,832,95"/>
+<area shape="rect" id="Node000002" href="$app_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title="Firmware entry point — bootstraps dotenv, Wi&#45;Fi, and HTTP server." alt="" coords="5,69,92,95"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="753,64,723,48,690,34,635,18,591,11,489,9,326,9,255,15,185,32,124,53,78,72,76,67,122,48,184,27,254,10,326,3,489,3,592,6,636,13,692,29,725,43,756,60"/>
+<area shape="rect" id="Node000003" href="$wifi__connect_8c.html#a64941b79700fa76bbb2ae3f6e1cc0421" title="Non&#45;blocking IP getter." alt="" coords="595,44,691,69"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="725,74,691,68,692,62,726,69"/>
+<area shape="rect" id="Node000004" href="$web___a_p_i_8c.html#adc7b4f6e2978a7866fa572b720f94d61" title="Build and send a /api/status JSON response." alt="" coords="428,69,547,95"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="725,85,547,85,547,79,725,79"/>
+<area shape="rect" id="Node000007" href="$wifi__connect_8c.html#aab73ad30ccbf49bc47fb84b513726ae4" title="Attempt to reconnect if currently disconnected." alt="" coords="446,120,529,145"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="726,95,529,128,529,123,725,89"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="581,69,548,75,547,70,581,64"/>
+<area shape="rect" id="Node000005" href="$web___a_p_i_8c.html#a96795f15e1c7bfe5b1eac458acb683d3" title="Register all URI handlers." alt="" coords="275,69,380,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="415,85,380,85,380,79,415,79"/>
+<area shape="rect" id="Node000006" href="$web__util_8c.html#a197dc25d543cc5cba8d05cbfb9934167" title="Start the HTTPS server and register all URI handlers." alt="" coords="140,69,227,95"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="261,85,227,85,227,79,261,79"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="126,85,92,85,92,79,126,79"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="432,134,299,127,219,120,140,109,91,97,92,92,140,103,220,114,299,122,433,129"/>
+</map>

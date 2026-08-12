@@ -1,0 +1,7 @@
+<map id="web_API.h" name="web_API.h">
+<area shape="rect" id="Node000001" title="HTTP endpoint registration — static files, /api/status, /api/wol." alt="" coords="99,5,189,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,128,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,33,91,71,88,67,130,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="153,79,290,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,29,200,67,197,71,155,33"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="dotenv_get_int" name="dotenv_get_int">
+<area shape="rect" id="Node000001" title="Retrieve an integer value by key, falling back to a default." alt="" coords="5,5,124,31"/>
+<area shape="rect" id="Node000002" href="$dotenv_8c.html#ae2c9e61eb3a2787ac6ebec1c9041986a" title="Retrieve a string value by key." alt="" coords="172,5,267,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,15,158,15,158,21,124,21"/>
+</map>

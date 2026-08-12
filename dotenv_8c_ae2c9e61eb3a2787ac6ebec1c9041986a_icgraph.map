@@ -1,0 +1,32 @@
+<map id="dotenv_get" name="dotenv_get">
+<area shape="rect" id="Node000001" title="Retrieve a string value by key." alt="" coords="785,231,880,256"/>
+<area shape="rect" id="Node000002" href="$web___a_p_i_8c.html#a2b6882c122937423d51dd4fc88591f76" title="Validate X&#45;API&#45;Key via constant&#45;time compare and reject on failure." alt="" coords="595,55,737,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="818,219,786,161,763,129,736,101,704,82,707,78,739,97,767,126,790,158,823,217"/>
+<area shape="rect" id="Node000006" href="$app_8c.html#a630544a7f0a2cc40d8a7fefab7e2fe70" title="Firmware entry point — bootstraps dotenv, Wi&#45;Fi, and HTTP server." alt="" coords="5,105,92,131"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="814,221,782,181,760,161,736,146,702,131,672,121,617,115,489,121,326,121,92,121,92,115,326,115,489,115,617,110,673,116,704,126,739,141,764,157,786,177,818,218"/>
+<area shape="rect" id="Node000008" href="$dotenv_8c.html#a2ee31323a3a574ee0c83a182684333a2" title="Retrieve an integer value by key, falling back to a default." alt="" coords="607,156,725,181"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="796,226,736,196,705,184,706,179,738,192,798,222"/>
+<area shape="rect" id="Node000010" href="$test__dotenv_8c.html#a48edbfce106e1b3ec82edc1b2d47e3c4" title=" " alt="" coords="619,205,713,231"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="771,237,713,228,714,223,772,231"/>
+<area shape="rect" id="Node000011" href="$test__dotenv_8c.html#a77b4c337ef4dd6309d3a3c8e666752eb" title=" " alt="" coords="619,255,713,280"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="772,255,714,263,713,258,771,249"/>
+<area shape="rect" id="Node000012" href="$test__dotenv_8c.html#a57499567e4e4e204b42e5fbc136099b4" title=" " alt="" coords="619,304,713,329"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="799,265,738,295,709,306,707,302,736,290,796,260"/>
+<area shape="rect" id="Node000013" href="$test__dotenv_8c.html#a146653ac83353c63774f047db009b14b" title=" " alt="" coords="619,353,713,379"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="816,269,783,307,739,344,715,356,712,351,736,340,779,304,812,265"/>
+<area shape="rect" id="Node000014" href="$test__dotenv_8c.html#a6f097fd3d7544c88c800f42f978ed310" title=" " alt="" coords="619,403,713,428"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="824,270,792,331,768,365,739,393,715,407,712,402,736,389,764,361,788,328,819,267"/>
+<area shape="rect" id="Node000003" href="$web___a_p_i_8c.html#adc7b4f6e2978a7866fa572b720f94d61" title="Build and send a /api/status JSON response." alt="" coords="428,5,547,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="605,53,534,33,535,28,607,48"/>
+<area shape="rect" id="Node000007" href="$web___a_p_i_8c.html#a10bce792fd3c3117bc79da4a54e28370" title="Trigger a WoL send and return JSON status." alt="" coords="437,55,538,80"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="581,70,538,70,538,65,581,65"/>
+<area shape="rect" id="Node000004" href="$web___a_p_i_8c.html#a96795f15e1c7bfe5b1eac458acb683d3" title="Register all URI handlers." alt="" coords="275,55,380,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="433,37,370,57,369,52,432,32"/>
+<area shape="rect" id="Node000005" href="$web__util_8c.html#a197dc25d543cc5cba8d05cbfb9934167" title="Start the HTTPS server and register all URI handlers." alt="" coords="140,55,227,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="261,70,227,70,227,65,261,65"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="137,88,84,108,82,103,135,83"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="423,70,380,70,380,65,423,65"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="593,170,389,162,264,153,140,139,92,131,93,125,140,134,265,148,389,157,593,165"/>
+<area shape="rect" id="Node000009" href="$test__dotenv_8c.html#a3050f320352e49ed98b2c303d16d5da2" title=" " alt="" coords="440,207,535,232"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="608,188,534,209,532,204,607,183"/>
+</map>
